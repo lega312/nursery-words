@@ -7,10 +7,12 @@ interface NewWordCardProps {
 
 export function NewWordCard({ word }: NewWordCardProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center">
+    <div className="spidey-card rounded-2xl p-6 flex flex-col items-center">
       <div className="text-6xl mb-3">{word.emoji}</div>
-      <div className="text-3xl font-bold text-slate-800 mb-1">{word.word}</div>
-      <div className="text-xl text-slate-500 mb-3">{word.translation}</div>
+      <div className="text-3xl font-extrabold text-white mb-1" style={{ fontFamily: 'Bangers, cursive', letterSpacing: '2px' }}>
+        {word.word}
+      </div>
+      <div className="text-xl text-blue-300 mb-3">{word.translation}</div>
       <SpeakButton word={word.word} />
     </div>
   )

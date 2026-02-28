@@ -1,6 +1,6 @@
 import { words, type Word } from '../data/words'
 
-const START_DATE = new Date(2026, 2, 2) // March 2, 2026 (months are 0-indexed)
+const START_DATE = new Date(2026, 2, 1) // March 1, 2026 (months are 0-indexed)
 const TOTAL_DAYS = 50
 
 export function getCurrentDay(): number {

@@ -1,9 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import "tailwindcss";
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #f0f9ff;
+  font-family: 'Bangers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Spidey background - red/blue gradient with web pattern */
+.spidey-bg {
+  background: linear-gradient(180deg, #1a1a4e 0%, #1e3a6e 30%, #dc2626 70%, #991b1b 100%);
+  min-height: 100vh;
+}
+
+/* Title - white with red shadow, comic book style */
+.spidey-title {
+  font-family: 'Bangers', cursive;
+  color: white;
+  text-shadow: 2px 2px 0px #dc2626, 4px 4px 0px rgba(0,0,0,0.3);
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+}
+
+/* New words label */
+.spidey-new-label {
+  font-family: 'Bangers', cursive;
+  color: #fbbf24;
+  text-shadow: 1px 1px 0px #991b1b;
+  letter-spacing: 3px;
+}
+
+/* Review section label */
+.spidey-review-label {
+  font-family: 'Bangers', cursive;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 3px;
+}
+
+/* Cards - dark with red/blue accents */
+.spidey-card {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border: 2px solid #dc2626;
+  box-shadow: 0 0 15px rgba(220, 38, 38, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+/* Header card */
+.spidey-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border: 2px solid #3b82f6;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+/* Review row */
+.spidey-row {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+/* Review banner for days with no new words */
+.spidey-review-banner {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  border: 2px solid #fbbf24;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+}
+
+/* Speak button */
+.spidey-speak {
+  background: rgba(220, 38, 38, 0.2);
+  border: 2px solid #dc2626;
+  transition: all 0.2s;
+}
+.spidey-speak:hover {
+  background: rgba(220, 38, 38, 0.4);
+}
+.spidey-speak:active {
+  transform: scale(0.9);
+}
+
+/* Progress bar */
+.spidey-progress-track {
+  background: rgba(255,255,255,0.1);
+}
+.spidey-progress-fill {
+  background: linear-gradient(90deg, #dc2626, #f59e0b);
+}
+
+/* Nav buttons */
+.spidey-nav {
+  color: white;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.spidey-nav:hover:not(:disabled) {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.2);
+}
+.spidey-nav:disabled {
+  opacity: 0.2;
 }
